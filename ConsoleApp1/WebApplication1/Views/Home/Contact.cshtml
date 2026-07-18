@@ -1,31 +1,13 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
     ViewData["Title"] = "Contact";
 }
-
-<section id="contact" class="py-5 mb-5">
-    <div class="container-fluid">
-        <p class="text-primary fw-bold mb-1">CONTACT</p>
-        <h2 class="mb-4 fw-bold">Let's connect</h2>
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-7">
-                <p class="lead mb-4">If you would like to connect, discuss an internship opportunity, or learn more about my projects, feel free to reach out to me.</p>
-                <div class="fs-5">
-                    <p class="mb-2"><strong>Email:</strong> <a href="mailto:eulloraven@gmail.com" class="text-decoration-none">eulloraven@gmail.com</a></p>
-                    <p class="mb-2"><strong>Mobile:</strong> 09568729329</p>
-                    <p class="mb-2"><strong>GitHub:</strong> <a href="https://github.com/EulloJohnRaven" target="_blank" class="text-decoration-none">github.com/EulloJohnRaven</a></p>
-                    <p class="mb-2"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/raven-eullo-ba92123b5/" target="_blank" class="text-decoration-none">linkedin.com/in/raven-eullo-ba92123b5</a></p>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="card bg-primary text-white border-0 shadow-lg text-center p-5 rounded-4">
-                    <h4 class="fw-bold mb-3">Interested in my work?</h4>
-                    <p class="mb-4">Download my resume to learn more about my education, technical skills, and experience.</p>
-                    <a href="#" class="btn btn-light btn-lg text-primary fw-bold w-100">Download Resume</a>
-                </div>
-            </div>
-        </div>
+<section class="py-5">
+    <h2 class="fw-bold mb-4">Let's connect</h2>
+    <div class="fs-5">
+        <p><strong>Email:</strong> <a href="mailto:@ViewData["Email"]">@ViewData["Email"]</a></p>
+        <p><strong>Mobile:</strong> @ViewData["Mobile"]</p>
+        <p><strong>GitHub:</strong> <a href="https://@ViewData["GitHub"]" target="_blank">@ViewData["GitHub"]</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://@ViewData["LinkedIn"]" target="_blank">@ViewData["LinkedIn"]</a></p>
     </div>
+    <a href="#" class="btn btn-primary mt-3">Download Resume</a>
 </section>

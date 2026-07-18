@@ -1,27 +1,21 @@
 ﻿@{
     ViewData["Title"] = "Home";
 }
-
-<!-- HOME SECTION -->
-<section id="home" class="d-flex align-items-center min-vh-100 py-5">
+<section class="d-flex align-items-center min-vh-100 py-5">
     <div class="container-fluid">
         <div class="row align-items-center flex-column-reverse flex-lg-row g-5">
             <div class="col-lg-7 text-center text-lg-start">
-                <p class="text-primary fw-bold mb-1 letter-spacing-1">WELCOME TO MY PORTFOLIO</p>
-                <h1 class="display-4 fw-bold mb-3">Hi, I'm <span class="text-primary">John Raven J. Eullo</span></h1>
-                <h2 class="h3 text-secondary mb-4">IT Student</h2>
-                <p class="lead mb-4">
-                    I am an IT Student at Lyceum of Alabang, and I have a strong desire to create programs
-                    that can streamline operations and change a company or a person's life for the better.
-                </p>
+                <p class="text-primary fw-bold mb-1">WELCOME TO MY PORTFOLIO</p>
+                <h1 class="display-4 fw-bold mb-3">Hi, I'm <span class="text-primary">@ViewData["Name"]</span></h1>
+                <h2 class="h3 text-secondary mb-4">@ViewData["Title"]</h2>
+                <p class="lead mb-4">@ViewData["Intro"]</p>
                 <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-                    <a href="#projects" class="btn btn-primary btn-lg px-4 shadow-sm">View Projects</a>
-                    <a href="#contact" class="btn btn-outline-primary btn-lg px-4">Contact Me</a>
+                    <a asp-controller="Home" asp-action="Projects" class="btn btn-primary btn-lg px-4">View Projects</a>
+                    <a asp-controller="Home" asp-action="Contact" class="btn btn-outline-primary btn-lg px-4">Contact Me</a>
                 </div>
             </div>
             <div class="col-lg-5 text-center">
-                <!-- Project Image -->
-                <img src="~/images/Profile.jpg" class="img-fluid rounded-4 shadow-lg border border-3 border-white" alt="Profile photo of John Raven J. Eullo" style="max-width: 80%;" />
+                <img src="~/images/Profile.jpg" class="img-fluid rounded-4 shadow" alt="Profile photo" style="max-width: 80%;" />
             </div>
         </div>
     </div>

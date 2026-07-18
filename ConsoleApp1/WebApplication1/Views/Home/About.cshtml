@@ -1,44 +1,14 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
     ViewData["Title"] = "About Me";
-
 }
-
-<!-- ABOUT ME SECTION -->
-<section id="about" class="py-5 bg-light rounded-4 my-5 px-4">
-    <div class="container-fluid">
-        <p class="text-primary fw-bold mb-1">ABOUT ME</p>
-        <h2 class="mb-4 fw-bold">A little about me</h2>
-        <div class="row g-5">
-            <div class="col-lg-7">
-                <p class="fs-5">
-                    I am an only child born on June 21, 2004, currently residing in Muntinlupa City.
-                    As an Information Technology student who craves knowledge, I love teaching and helping others learn.
-                    I am continuously developing my skills in programming, web development, and database architecture to stay sharp in this fast-paced industry. Outside of my studies, my personal interests include watching anime, singing, and watching or playing sports.
-                </p>
-                <p class="fs-5">
-                    My ultimate career goals are to become a Game Developer and a Content Moderator.
-                    I want to create meaningful digital experiences and robust applications that positively impact users.
-                    Whether it's building a game environment or ensuring safe online communities, I am dedicated to delivering quality tech solutions.
-                </p>
-            </div>
-            <div class="col-lg-5">
-                <div class="card shadow-sm border-0 mb-4">
-                    <div class="card-body p-4">
-                        <h5 class="fw-bold text-primary mb-3">Educational Background</h5>
-                        <p class="mb-0 fw-semibold">BS Information Technology</p>
-                        <small class="text-muted">Lyceum of Alabang | 2024 - Present</small>
-                        <hr />
-                        <p class="mb-0 fw-semibold">Senior High School</p>
-                        <small class="text-muted">Lakeview Integrated School | 2020 - 2022</small>
-                        <hr />
-                        <p class="mb-0 fw-semibold">Junior High School</p>
-                        <small class="text-muted">Lakeview Elementary School | 2016 - 2020</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<section class="py-5">
+    <h2 class="fw-bold mb-4">About Me</h2>
+    <p>@ViewData["Bio1"]</p>
+    <p>@ViewData["Bio2"]</p>
+    <h4 class="mt-5 fw-bold">Educational Background</h4>
+    <p>@ViewData["Ed1"]</p>
+    <p>@ViewData["Ed2"]</p>
+    <p>@ViewData["Ed3"]</p>
+    <h4 class="mt-4 fw-bold">Career Goals</h4>
+    <p>@ViewData["Goals"]</p>
 </section>
